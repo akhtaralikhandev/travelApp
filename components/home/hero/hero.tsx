@@ -205,7 +205,7 @@ const HeroHome = () => {
                 </div>
             </div>
             <div className="resort_booking">
-                <div className="resort_bookingWrapper flex md:flex-row flex-col items-center p-8 gap-4 xl:gap-24  xl:pt-24 xl:pl-60 xl:pr-60 bg-white">
+                <div className="resort_bookingWrapper flex md:flex-row flex-col items-center p-8 gap-8 xl:gap-24  xl:pt-24 xl:pl-60 xl:pr-60 bg-white">
                     <div className="">
                         <div>
                             <span className="fastAndEasy">Fast & Easy</span>
@@ -260,7 +260,7 @@ const HeroHome = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="resort_card shadow-xl flex flex-col gap-4 rounded-lg p-4">
+                        <div className="resort_card shadow-xl flex flex-col gap-8 rounded-lg p-4">
                             <img
                                 className=""
                                 src="/images/home/favorites/Rectangle 17.png"
