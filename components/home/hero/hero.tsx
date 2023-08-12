@@ -35,20 +35,20 @@ const HeroHome = () => {
                             <span>you’re going to, we’ll</span>
                             <span>take you there</span>
                         </div>
-                        <div className="heromaindiv2 text-sm md:text-xl flex items-center justify-between pl-4 pr-4 p-2 md:p-4">
-                            <div>
+                        <div className="heromaindiv2 text-xs md:text-xl flex items-center justify-between pl-4 pr-4 p-2 md:p-4">
+                            <div className="text-xs md:text-xl">
                                 <span>Where to?</span>
                             </div>
-                            <div className="flex items-center  gap-4">
+                            <div className="flex items-center  gap-4 text-xs md:text-xl">
                                 <span>Travel Type</span>
-                                <img src="/images/home/hero/Vector (1).png" alt="img" />
+                                <img className="sm:block hidden" src="/images/home/hero/Vector (1).png" alt="img" />
                             </div>
-                            <div className="flex items-center gap-4">
+                            <div className="flex items-center gap-4 text-xs md:text-xl">
                                 <span>Duration</span>
-                                <img src="/images/home/hero/Vector (1).png" alt="img" />
+                                <img className="sm:block hidden" src="/images/home/hero/Vector (1).png" alt="img" />
                             </div>
                             <div>
-                                <button className="heroButtonmain md:pl-16 md:pr-16 pl-6 pr-6 p-3 md:p-4">submit</button>
+                                <button className="heroButtonmain text-xs md:text-xl md:pl-16 md:pr-16 pl-4 pr-4 p-2 md:p-4">submit</button>
                             </div>
                         </div>
                         <div className="flex items-start md:items-center md:flex-row flex-col gap-2 md:gap-8">
