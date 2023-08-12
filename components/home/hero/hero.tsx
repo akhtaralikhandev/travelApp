@@ -308,6 +308,19 @@ const HeroHome = () => {
                     </div>
                 </div>
             </div>
+            <div className="liberty md:h-80 xl:pl-60 xl:pr-60 xl:pt-24">
+                <div className="liberty_wrapper">
+                    <div className="nextholiday relative flex flex-col">
+                        <span>Let’s make your</span>
+                        <span>next holiday amazing</span>
+                        <img
+                            className="line_image absolute right-48 top-32"
+                            src="/images/home/liberty/Line-1.png"
+                            alt="img"
+                        />
+                    </div>
+                </div>
+            </div>
         </>
     );
 };

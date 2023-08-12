@@ -203,3 +203,24 @@
   line-height: 124.5%; /* 22.41px */
   letter-spacing: 0.27px;
 }
+.liberty {
+  background-image: url("../../../public/images/home/liberty/Rectangle\ 19294.png");
+
+  background-position: center;
+  background-size: cover;
+}
+.nextholiday {
+  color: #fff;
+  font-family: Volkhov;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.line_image {
+  width: 312px;
+  height: 41px;
+  transform: rotate(5.536deg);
+  flex-shrink: 0;
+}
