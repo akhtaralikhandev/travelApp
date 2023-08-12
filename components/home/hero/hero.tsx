@@ -30,7 +30,7 @@ const HeroHome = () => {
                         </div>
                     </div>
                     <div className="heromain flex flex-col gap-14">
-                        <div className="heromaintext md:text-6xl text-xl flex flex-col pt-24">
+                        <div className="heromaintext md:text-6xl text-2xl flex flex-col pt-24">
                             <span>No matter where </span>
                             <span>you’re going to, we’ll</span>
                             <span>take you there</span>
