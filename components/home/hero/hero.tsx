@@ -209,7 +209,7 @@ const HeroHome = () => {
                     <div className="">
                         <div>
                             <span className="fastAndEasy">Fast & Easy</span>
-                            <div className="get_your_favorite flex-col flex">
+                            <div className="get_your_favorite md:text-5xl text-xl flex-col flex">
                                 <span>Get Your Favourite</span>
                                 <span>Resort Bookings</span>
                             </div>
