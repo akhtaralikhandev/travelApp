@@ -35,15 +35,15 @@ const HeroHome = () => {
                             <span>you’re going to, we’ll</span>
                             <span>take you there</span>
                         </div>
-                        <div className="heromaindiv2 sm:text-sm flex items-center justify-between pl-4 pr-4 p-2 md:p-4">
+                        <div className="heromaindiv2 text-sm md:text-xl flex items-center justify-between pl-4 pr-4 p-2 md:p-4">
                             <div>
                                 <span>Where to?</span>
                             </div>
-                            <div className="flex items-center sm:text-sm gap-4">
+                            <div className="flex items-center  gap-4">
                                 <span>Travel Type</span>
                                 <img src="/images/home/hero/Vector (1).png" alt="img" />
                             </div>
-                            <div className="flex items-center sm:text-sm gap-4">
+                            <div className="flex items-center gap-4">
                                 <span>Duration</span>
                                 <img src="/images/home/hero/Vector (1).png" alt="img" />
                             </div>
