@@ -1,5 +1,16 @@
+"use client"
+import { useState } from "react";
 import "./hero.css";
 const HeroHome = () => {
+    const [height, setHeight] = useState("0%")
+    const toggleHeight = () => {
+        if (height === "0%") {
+            setHeight("30%")
+        } else {
+            setHeight("0%")
+        }
+    }
+
     return (
         <>
             <div className="heroHome">
@@ -9,7 +20,7 @@ const HeroHome = () => {
                             <span>Travel</span>
                             <img src="/images/home/hero/Arrow 05.png" alt="img" />
                         </div>
-                        <div className="middle xl:block hidden">
+                        <div className="middle  xl:block hidden">
                             <ul className="flex items-center  justify-between gap-12">
                                 <li className="cursor-pointer">Home</li>
                                 <li className="cursor-pointer">About</li>
@@ -19,16 +30,19 @@ const HeroHome = () => {
                                 </li>
                                 <li className=" cursor-pointer">Upcoming Packages</li>
                             </ul>
+
                         </div>
                         <div className="right ">
                             <button className="navbar_button xl:block hidden rounded-sm p-2 shadow-xl">
                                 Get in Touch
                             </button>
-                            <span className="absolute top-20 xl:hidden block right-14 text-3xl cursor-pointer">
+                            <span onClick={() => toggleHeight()} className="absolute top-20 xl:hidden block right-14 text-3xl cursor-pointer">
                                 <i className="fa fa-bars" aria-hidden="true"></i>
+
                             </span>
                         </div>
                     </div>
+
                     <div className="heromain flex flex-col gap-14">
                         <div className="heromaintext md:text-6xl text-2xl flex flex-col pt-24">
                             <span>No matter where </span>
@@ -67,6 +81,23 @@ const HeroHome = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div style={{ height: height }} className="nav md:hidden overflow-hidden flex absolute top-0 w-full justify-between items-center bg-black ">
+                <ul className="flex flex-col text-white  items-start pl-8 p-4  text-sm justify-between gap-2">
+                    <li className="cursor-pointer">Home</li>
+                    <li className="cursor-pointer">About</li>
+                    <li className="flex items-center gap-4 cursor-pointer">
+                        <span>Services</span>
+                        <img src="/images/home/hero/Vector.png" alt="" />
+                    </li>
+                    <li className=" cursor-pointer">Upcoming Packages</li>
+                </ul>
+                <div onClick={() => toggleHeight()} className="cross text-white pr-8 cursor-pointer font-light text-4xl">
+                    <span>
+                        <i className="fa fa-times " aria-hidden="true"></i>
+                    </span>
+
                 </div>
             </div>
             <div className="company flex p-4 md:p-12 items-center  justify-between md:pl-32 md:pr-32 ">
@@ -308,9 +339,9 @@ const HeroHome = () => {
                     </div>
                 </div>
             </div>
-            <div className="liberty md:h-80 xl:pl-60 xl:pr-60 xl:pt-24">
+            <div className="liberty md:h-80 h-48 xl:pl-60 xl:pr-60 xl:pt-24">
                 <div className="liberty_wrapper">
-                    <div className="nextholiday relative flex flex-col">
+                    <div className="nextholiday md:text-5xl text-2xl  relative flex flex-col">
                         <span>Let’s make your</span>
                         <span>next holiday amazing</span>
                         <img

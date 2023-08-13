@@ -1,3 +1,5 @@
+"use client"
+
 import HeroHome from '../components/home/hero/hero'
 import Image from 'next/image'
 

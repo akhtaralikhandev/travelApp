@@ -211,7 +211,6 @@
 .nextholiday {
   color: #fff;
   font-family: Volkhov;
-  font-size: 50px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -222,4 +221,7 @@
   height: 41px;
   transform: rotate(5.536deg);
   flex-shrink: 0;
+}
+.nav {
+  transition: 0.3s;
 }
