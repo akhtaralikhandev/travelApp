@@ -1,0 +1,51 @@
+name: Continuous Integration and Deployment
+on:
+  push:
+     branches: [master]
+  pull_request: 
+     branches: [master]
+     
+
+jobs:
+  build:
+    runs-on: self-hosted
+    
+ 
+    steps:
+      - name: Display contents of directory before checkout
+        run: |
+          echo "Before checkout:"
+          ls -la
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          clean: false
+      - name: Display contents of directory after checkout
+        run: |
+          echo "After checkout:"
+          ls -la
+
+      - name: Uses Node.js ${{ matrix.version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.version }}
+
+      - name: Check if package.json is modified
+        id: check_package_json
+        run: echo ::set-output name=modified::$(git diff --name-only ${{ github.event.before }}..${{ github.sha }} -- package.json)
+
+      - name: Install dependencies if package.json is modified
+        run: |
+          if [[ "${{ steps.check_package_json.outputs.modified }}" == "package.json" ]]; then
+            npm install --legacy-peer-deps
+          else
+            echo "No changes to package.json. Skipping npm install."
+          fi
+
+      - name: Reload PM2 and save changes
+        run: |
+          pm2 reload ecosystem.config.js
+          pm2 save
+

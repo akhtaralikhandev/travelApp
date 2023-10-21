@@ -1,0 +1,46 @@
+.forum-integ{
+    margin: 80px auto 0 auto;
+    padding: 30px 20px;
+  
+    max-width: 980px;
+}
+
+.forum-integ h3{
+    width: 100%;
+    margin-left: -35%;
+    font-size: 1.5rem;
+    padding: 30px;
+    
+}
+
+
+
+.forum-inte-list ul{
+    width: 90%;  
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+    border-top: 1px solid #ddd;
+    
+    margin: auto;
+   
+   
+}
+
+.forum-inte-list ul li{
+    width: 30%;
+    margin-top: 25px;
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 654px){
+    .forum-inte-list ul li{
+        width: 100%;
+    }
+    .forum-integ h3{
+        margin: auto;
+    }
+}

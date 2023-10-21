@@ -1,0 +1,116 @@
+$red: #ff6b6b;
+$white: #fff;
+$whiteTransparent: rgba(255,255,255,0.2);
+
+.main_container {
+  .hero-wrapper {
+    padding-top: 12rem;
+    padding-bottom: 10rem;
+
+    .heading-texts {
+      .heading-caption {
+        color: $red;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+
+      h1 {
+        text-shadow: 2px 2px 8px black;
+      }
+      .header-bottom-border {
+        width: 4em;
+        background: $white;
+        height: 4px;
+        border-radius: 5px;
+        -webkit-animation-name: border-animation;
+        animation-name: border-animation;
+        margin-top: 1em;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-duration: 4s;
+        animation-duration: 4s;
+        margin: 1rem auto auto auto;
+      }
+    }
+
+    .margin-mobile {
+      margin-top: 1.5rem;
+      @media (min-width: 576px) {
+        margin-top: 0rem;
+      }
+    }
+  }
+
+  .pagination-wrapper {
+    ul {
+      width: 90vw;
+      margin: auto;
+
+      li {
+        color: $white;
+        border-radius: 50%;
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#1485ff),
+          to(#22629d)
+        );
+        background: linear-gradient(#1485ff, #22629d);
+        padding: 0.25rem;
+
+        &.active {
+          background: linear-gradient(to bottom right, red, rgb(255, 149, 149));
+          color: white;
+          box-shadow: 7px 7px 10px rgb(150, 150, 150);
+        }
+      }
+    }
+  }
+
+  .data {
+    background: linear-gradient(0.33turn, #3f87a6, #ebf8e1, #f69d3c, #561423);
+  }
+
+  .card-container{
+    background: $whiteTransparent;
+  }
+
+  .carousel-item {
+    img{
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+}
+
+@-webkit-keyframes border-animation {
+  0% {
+    width: 0em;
+  }
+  40% {
+    width: 15em;
+  }
+  80% {
+    width: 0em;
+  }
+  100% {
+    width: 4em;
+  }
+}
+
+@keyframes border-animation {
+  0% {
+    width: 0em;
+  }
+  40% {
+    width: 15em;
+  }
+  80% {
+    width: 0em;
+  }
+  100% {
+    width: 4em;
+  }
+}

@@ -1,0 +1,161 @@
+.HeaderTablesnew{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.HeaderTablesDiv11new{
+    flex: 0.3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.HeaderTablesDiv2new{
+    flex: 0.3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+.HeaderTablesDiv3new{
+    flex: 0.4;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.HeaderTablesDiv1Btn1new
+{
+width: 48%;
+padding: 5px 8px 5px 8px;
+border: 1px solid gray;
+background-color: transparent;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+}
+
+.textStylenew{
+    font-size: 1rem;
+    margin-right: 5%;
+}
+.textStyle1new{
+    font-size: 0.8rem;
+    margin-right: 5%;
+}
+.HeaderTablesDiv2Textnew{
+width: 23%;
+padding: 5px 6px 5px 6px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1rem;
+
+}
+.HeaderTablesDiv2Textnew:hover{
+    background-color:   #ffccb3;
+    font-size: 1rem;
+color: #ff661a;
+    cursor: pointer;
+    }
+.HeaderTablesDiv2Btnnew{
+    width: 25%;
+    padding: 5px 3px 5px 3px;
+    border: 1px solid transparent;
+    background-color: #fe7a15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+
+}
+.catTextnew{
+    font-size: 0.8rem;
+}
+.HeaderTablesDiv3Btnnew
+{
+
+padding: 2%;
+border: 1px solid gray;
+background-color: transparent;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+border-radius: 5px;
+cursor: pointer;
+}
+.textStyleDiv3new{
+    font-size: 1rem;
+    
+}
+
+@media screen and (max-width: 900px) {
+    .HeaderTablesnew{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .HeaderTablesDiv1new{
+        flex: 0.6;
+        display: flex;
+        align-items: center;
+        
+        background-color: #ff661a;
+        }
+
+    .HeaderTablesDiv1Btn1new{
+        width: 50%;
+        padding: 5px 5px 5px 5px;
+       
+
+        
+        }
+    .HeaderTablesDiv2new{
+        display: none;
+    }
+    .textStyle1new{
+        font-size: 0.5rem;
+        
+    }
+    .HeaderTablesDiv3new{
+       flex: 0.4;
+    
+
+        }
+  }
+
+  @media screen and (min-width: 900px ) and (max-width: 1050px) {
+
+
+    .HeaderTablesDiv1Btn1new{
+        padding: 5px 0px 5px 0px;
+        
+        }
+        .textStyle1new{
+            font-size: 0.7rem;
+            margin-right: 0%;
+        }
+
+  }
+
+  @media screen and (min-width: 1050px ) and (max-width: 1220px) {
+
+    .HeaderTablesDiv1Btnnew{
+        padding: 5px 3px 5px 3px;
+
+    }
+    .HeaderTablesDiv1Btn1new{
+        padding: 5px 3px 5px 3px;
+        
+        }
+        .textStylenew{
+            font-size: 0.8rem;
+            margin-right: 0%;
+        }
+
+  }

@@ -1,0 +1,168 @@
+.HeaderTables{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.HeaderTablesDiv1{
+    flex: 0.5;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.HeaderTablesDiv2{
+    flex: 0.3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+.HeaderTablesDiv3{
+    flex: 0.2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.HeaderTablesDiv1Btn
+{
+width: 30%;
+padding: 5px 8px 5px 8px;
+border: 1px solid gray;
+background-color: transparent;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+}
+.HeaderTablesDiv1Btn1
+{
+width: 30%;
+padding: 5px 8px 5px 8px;
+border: 1px solid gray;
+background-color: transparent;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+}
+.textStyle{
+    font-size: 1rem;
+    margin-right: 5%;
+}
+.HeaderTablesDiv2Text{
+width: 23%;
+padding: 5px 6px 5px 6px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1rem;
+
+}
+.HeaderTablesDiv2Text:hover{
+    background-color:   #ffccb3;
+    font-size: 1rem;
+color: #ff661a;
+    cursor: pointer;
+    }
+.HeaderTablesDiv2Btn{
+    width: 25%;
+    padding: 5px 3px 5px 3px;
+    border: 1px solid transparent;
+    background-color: #fe7a15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+
+}
+.catText{
+    font-size: 0.8rem;
+}
+.HeaderTablesDiv3Btn
+{
+
+padding: 2%;
+border: 1px solid gray;
+background-color: transparent;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+border-radius: 5px;
+cursor: pointer;
+}
+.textStyleDiv3{
+    font-size: 1rem;
+    
+}
+
+@media screen and (max-width: 900px) {
+    .HeaderTables{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .HeaderTablesDiv1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        }
+    .HeaderTablesDiv1Btn{
+    display: none;
+    }
+    .HeaderTablesDiv1Btn1{
+        width: 60%;
+        padding: 5px 5px 5px 5px;
+        font-size: 0.8rem;
+
+        
+        }
+    .HeaderTablesDiv2{
+        display: none;
+    }
+  
+    .HeaderTablesDiv3{
+       flex: 0.4;
+    justify-content: flex-end;
+
+        }
+  }
+
+  @media screen and (min-width: 900px ) and (max-width: 1050px) {
+
+    .HeaderTablesDiv1Btn{
+        padding: 5px 0px 5px 0px;
+
+    }
+    .HeaderTablesDiv1Btn1{
+        padding: 5px 0px 5px 0px;
+        
+        }
+        .textStyle{
+            font-size: 0.7rem;
+            margin-right: 0%;
+        }
+
+  }
+
+  @media screen and (min-width: 1050px ) and (max-width: 1220px) {
+
+    .HeaderTablesDiv1Btn{
+        padding: 5px 3px 5px 3px;
+
+    }
+    .HeaderTablesDiv1Btn1{
+        padding: 5px 3px 5px 3px;
+        
+        }
+        .textStyle{
+            font-size: 0.8rem;
+            margin-right: 0%;
+        }
+
+  }

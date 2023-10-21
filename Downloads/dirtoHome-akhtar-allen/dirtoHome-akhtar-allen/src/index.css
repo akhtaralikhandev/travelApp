@@ -1,0 +1,10 @@
+body{
+    background: rgba(240,240,240, 0.2);
+}
+
+.logo-right-content{
+    padding-right: 0 !important;
+}
+.main-menu-content nav ul li{
+    padding-right: 10px;
+}
